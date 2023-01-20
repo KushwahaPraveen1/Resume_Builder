@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import './nav.css'
 function Nav() {
   return (
@@ -12,7 +13,7 @@ function Nav() {
             <li>Contact</li>
         </ul>
         <ul className="btns">
-          <button className="login">Login</button>
+         <NavLink to = '/login'><button className="login">Login</button> </NavLink> 
           <button className="sign">Sign-Up</button>
         </ul>
    </div>
