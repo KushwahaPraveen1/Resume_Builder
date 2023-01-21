@@ -8,8 +8,8 @@ function Education() {
     <div className=''>
 
   </div>
-  <div className='experience_main'>
-  <div className='main'>
+  <div className='experience_main1'>
+  <div className='main1'>
   <h3>Education</h3>
   <div className="center"> <div className="inputbox inputbox1"> <input type="text" required="required" /> <span>University/School</span> </div> </div>
   <div className="center"> <div className="inputbox inputbox2"> <input type="text" required="required" /> <span>Degree (Eg.Bachelor's  degree High school, etc.)</span> </div> </div>

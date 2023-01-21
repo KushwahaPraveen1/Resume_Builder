@@ -10,9 +10,9 @@ function Verify() {
   const headers = { authorization: `Bearer ${accesstoken}`};
   console.log(headers)
   console.log(accesstoken)
-  const detailResult = axios.post("https://resume-builder-blond.vercel.app/verifyotp", {
-  headers:headers,
-  otp : otp,
+  const detailResult = axios.post("https://resumebuilder-p49e.onrender.com/verifyotp", {
+    headers:{"Content-Type":'application/json'},
+    otp:otp,         
   
 })
 .then(result=>{
