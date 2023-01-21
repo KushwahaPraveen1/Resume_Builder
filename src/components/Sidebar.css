@@ -9,7 +9,7 @@
 font-size: 20px;
 list-style-type: disclosure-closed;
 line-height: 50px;
-text-decoration: none!important;
+text-decoration: none;
 }
 .sidebar ul li:hover{
     background-color: black;
