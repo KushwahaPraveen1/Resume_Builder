@@ -54,7 +54,7 @@ function Home() {
                     <div class="fcol1">
                     <textarea id="long" name="msg" placeholder="Leave message" required></textarea>
                     <div class="fcol1">
-                        <button type="submit">Send Message</button>
+                        <button type="submit" className='submit_button'>Send Message</button>
                     </div>
                     </div>
                 </form>
