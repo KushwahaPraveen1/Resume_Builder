@@ -1,0 +1,85 @@
+const User=require("../model/user");
+const hbs = require('handlebars')
+ 
+const fs = require('fs-extra')
+ 
+const path = require('path')
+const puppeteer = require('puppeteer');
+
+const generatepdf=async (req,res,next)=>{
+    try{
+        const email=req.user.email;
+const user=await User.findOne({email:req.user.email});
+const ex=await User.findOne({email:req.user.email}).populate('experience');
+const ed=await User.findOne({email:req.user.email}).populate('education');
+
+const compile=async function (templateName,data){
+    const  filePath=path.join(__dirname,'..','templates',`${templateName}.hbs`)
+
+    const html=await fs.readFile(filePath,'utf8');
+
+    return hbs.compile(html)(data);
+};
+
+const atindex=email.lastIndexOf('@');
+const names=email.substring(0,atindex);
+const pdfpath= path.join(__dirname,'..', 'pdf',`${names}.pdf`);
+
+async function created(){
+
+    try{
+        const browser =await puppeteer.launch({ args: ["--no-sandbox"], headless: true });
+        const page= await browser.newPage();
+
+        const data={
+            user:user,
+            ex:ex,
+            ed:ed
+        }
+        const content=await compile("template1",data);
+
+        await page.setContent(content);
+
+        await page.pdf({
+        path:pdfpath,
+        format:'A4',
+        printBackground:true});
+        console.log("pdf created");
+        await browser.close();
+        process.exit();
+     
+
+    }
+    catch(err)
+    {
+        console.log(err);
+    }
+
+
+}
+created();
+    
+
+const pdfpath2= path.join(__dirname,'..', 'pdf','divysharma.pdf');
+    
+fs.readFile(pdfpath2,(err,file)=>{
+    if(err){
+        console.log(err);
+        throw (err);
+    }
+    res.setHeader('Content-Type','application/pdf');
+    res.setHeader('Content-Desposition',`attachment;filename=divysharma.pdf`);
+    res.send(file);
+});
+
+}
+catch(err)
+{
+    console.log(err);
+    throw(err);
+}
+}
+
+
+
+module.exports={generatepdf}
