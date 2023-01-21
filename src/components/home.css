@@ -42,6 +42,7 @@ margin-top: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #E7EBEE;
 }
 .container .black{
     background-color: black;
@@ -98,3 +99,65 @@ margin: 70px 140px;
     width: 33vw;
     margin: 0 215px;
 }
+.contact{
+    height: 500px;
+    background-color: #E7EBEE;
+}
+.contact .contact-head{
+    color: #19236D;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: underline #EEB73F 4px;
+}
+
+.fcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+
+  }
+  .fill{
+    width: 25rem;
+    height: 21rem;
+    border-radius: 12px;
+    margin-bottom: 5vh;
+    background-color: white;
+  }
+  .fcol1{
+    margin: 10px 20px;
+  }
+  .fcol1 input{
+    padding: 3% 5%;
+    width: 87%;
+    border-radius: 20px;
+    font-family: 'Coda', sans-serif;
+    border: 2px solid black;
+  }
+  #long{
+    margin: 1vh 0;
+    padding: 3% 5%;
+    height: 4.1rem;
+    width: 19.6rem;
+    font-family: 'Coda', sans-serif;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .fcol1 button{
+    width: 110%;
+    height: 2.3rem;
+    margin: 0 -17px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Coda', sans-serif;
+    font-size: 1rem;
+    background-color: #19236D;
+    color: white;
+  }
+  .fcol1 button:hover{
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
