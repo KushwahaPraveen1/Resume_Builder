@@ -1,0 +1,18 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.sidebar ul li{
+    font-weight: 500;
+font-size: 20px;
+list-style-type: none;
+line-height: 50px;
+}
+.sidebar ul li:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding:0 5px ;
+    cursor: pointer;
+}

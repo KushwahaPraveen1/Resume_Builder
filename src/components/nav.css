@@ -8,7 +8,8 @@ display: flex;
 align-items: center;
 background: #FFFFFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-margin-bottom: 100px;
+z-index: 999;
+/* margin-bottom: 100px; */
 z-index: 999;
 }
 .nav .logo{
@@ -18,7 +19,7 @@ z-index: 999;
     width: 200px;
 }
 .nav ul{
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
     margin-left: 100px;
@@ -28,6 +29,10 @@ z-index: 999;
     margin: 0 5px;
     text-decoration: none;
 }
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+} 
 .nav .btns{
     width: 20%;
     margin-right: 50px;

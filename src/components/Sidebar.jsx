@@ -1,11 +1,11 @@
-import React from 'react'
-import Education from './Education'
-import Experience from './Experience'
+import React from 'react';
+import "./Sidebar.css"
 
 function Sidebar() {
   return (
     <>
-        <ul className=''>
+        <div className='sidebar'>
+          <ul>
             <li>Personal Details</li>
             <li>Experience</li>
             <li>Education</li>
@@ -13,6 +13,7 @@ function Sidebar() {
             <li>Languages</li>
             <li>About Me</li>
         </ul>
+        </div>
     </>
   )
 }

@@ -7,7 +7,7 @@ function Verify() {
  
   async function signup(e) {
   e.preventDefault();
-  const headers = { authorization: `Bearer ${accesstoken}`};
+  const headers = { authorization: accesstoken};
   console.log(headers)
   console.log(accesstoken)
   const detailResult = axios.post("https://resumebuilder-p49e.onrender.com/verifyotp", {

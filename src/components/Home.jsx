@@ -9,7 +9,7 @@ import sample from "./sample-res.png";
 function Home() {
   return (
     <>
-        <div className='head'>
+        <div className='head' id='home-hd'>
             <div className='content'>
             <div className='large'>
                 <p>Build Your Resume With Us</p>
@@ -39,7 +39,7 @@ function Home() {
             </div>
             </div>
         </div>
-        <div className='contact'>
+        <div className='contact' id='con'>
             <div className='contact-head'>CONTACT US</div>
             <div class="fcontainer">
                 <form name="myForm" class="fill">
@@ -54,7 +54,7 @@ function Home() {
                     <div class="fcol1">
                     <textarea id="long" name="msg" placeholder="Leave message" required></textarea>
                     <div class="fcol1">
-                        <button type="submit">Send Message</button>
+                        <button type="submit" className='submit_button'>Send Message</button>
                     </div>
                     </div>
                 </form>
