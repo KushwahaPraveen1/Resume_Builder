@@ -11,10 +11,10 @@ function Nav() {
    <img src={logo} alt='logo'/>
    </span>
         <ul>
-        <NavLink to = '/' className="_nav"><li>Home</li></NavLink>
-        <NavLink to = '/' className="_nav"><li>About</li></NavLink>
-        <NavLink to = '/' className="_nav"><li>Services</li></NavLink>
-        <NavLink to = '/' className="_nav"><li>Contact Us</li></NavLink>
+        <NavLink to = '/' className="_nav"><li><a href="#home-hd">Home</a> </li></NavLink>
+        <NavLink to = '/' className="_nav"><li><a href="">About</a> </li></NavLink>
+        <NavLink to = '/' className="_nav"><li><a href="">Services</a> </li></NavLink>
+        <NavLink to = '/' className="_nav"><li><a href="#con">Contact Us</a></li></NavLink>
         </ul>
         <ul className="btns">
          <NavLink to = '/login' className="_nav"><button className="login">Login</button> </NavLink> 

@@ -19,7 +19,10 @@ function Routers() {
     <Route  path='/login'element = {<Login />} />   
     <Route path='/education' element = {<Education/>}/>   
     <Route path='/experience' element = {<Experience/>}/>   
-    <Route path='/sidebar' element = {<Sidebar/>}/>
+    <Route path='/personal-details' element = {<Sidebar/>}/>
+    <Route path='/skills' element = {<Sidebar/>}/>
+    <Route path='/languages' element = {<Sidebar/>}/>
+
     </Routes>
      </Router>
    <Footer/>
