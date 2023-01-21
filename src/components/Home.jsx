@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './home.css';
 import mnc1 from "./mnc1.png";
 import mnc2 from "./mnc2.png";
@@ -16,7 +17,7 @@ function Home() {
             <div className='small'>
                 <p>Simple. Modern. <span className='ylw'>#GetHired.</span></p>
             </div>
-            <button className="create">Build Resume</button>
+            <NavLink to = '/education'><button className="create">Build Resume</button></NavLink>
             </div>
         </div>
         <div className='container'>
