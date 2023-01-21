@@ -1,0 +1,29 @@
+.foot{
+    height: 300px;
+    display: flex;
+    background-color: #12184c;
+}
+.foot .part1{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.foot .part1 img{
+    width: 250px;
+    margin: 25px ;
+}
+.foot .part2 ul{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.foot .part2 li{
+    list-style-type: none;
+    margin: 75px 0;
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
