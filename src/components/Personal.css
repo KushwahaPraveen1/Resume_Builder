@@ -13,6 +13,11 @@ height: 630px;
 padding: 40px;
    
 }
+.experience_main1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 .inputbox5{
     margin-top: 10px;
 }

@@ -1,10 +1,14 @@
 import React from 'react'
 import './Personal.css'
+import Sidebar from './Sidebar'
 
 function Personal() {
   return (
     <>
   <div className='experience_main1'>
+  <div className='side'>
+      <Sidebar/>
+    </div>
   <div className='main'>
   <h3>Personal Details</h3>
   <div className="center"> <div className="inputbox inputbox2"> <input type="text" required="required" /> <span>First Name</span> </div> </div>

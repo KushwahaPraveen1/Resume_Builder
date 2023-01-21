@@ -7,7 +7,9 @@ import Experience from "./Experience";
 import Sidebar from "./Sidebar";
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Footer from "./Footer";
+import Skills from "./Skills"
 import Verify from "./Verify";
+import Personal from "./Personal";
 // import { Footer } from "./Footer";
 
 function Routers() {
@@ -20,10 +22,14 @@ function Routers() {
     <Route  path='/login'element = {<Login />} />   
     <Route path='/education' element = {<Education/>}/>   
     <Route path='/experience' element = {<Experience/>}/>   
-    <Route path='/personal-details' element = {<Sidebar/>}/>
-    <Route path='/skills' element = {<Sidebar/>}/>
+    <Route path='/personal-details' element = {<Personal/>}/>
+    <Route path='/skills' element = {<Skills/>}/>
     <Route path='/languages' element = {<Sidebar/>}/>
     <Route path='/verify' element = {<Verify/>}/>
+    <Route path='/skills' element = {<Skills/>}/>
+    <Route path='/verify' element = {<Verify/>}/>
+    <Route path='/verify' element = {<Verify/>}/>
+    
 
     </Routes>
      </Router>

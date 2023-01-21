@@ -17,7 +17,7 @@ function Home() {
             <div className='small'>
                 <p>Simple. Modern. <span className='ylw'>#GetHired.</span></p>
             </div>
-            <NavLink to = '/education'><button className="create">Build Resume</button></NavLink>
+            <NavLink to = '/personal-details'><button className="create">Build Resume</button></NavLink>
             </div>
         </div>
         <div className='container'>

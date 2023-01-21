@@ -1,22 +1,23 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import { NavLink } from 'react-router-dom';
+// import axios from 'axios'
 import './Login.css'
 
 function Login() {
   const [email,setEmail] = useState("");
   async function signup(e) {
-  e.preventDefault();
-   axios.post("https://resumebuilder-p49e.onrender.com/sign",{
-    email : email,     
-   })
-         .then(result=>{
-    console.log(result)
-    const accesstoken = result.data.token;
-    localStorage.setItem('accesstoken',accesstoken)
-   }) 
-         .catch(err=>{
-          console.log(err)
-         }) 
+  // e.preventDefault();
+  //  axios.post("https://resumebuilder-p49e.onrender.com/sign",{
+  //   email : email,     
+  //  })
+  //        .then(result=>{
+  //   console.log(result)
+  //   const accesstoken = result.data.token;
+  //   localStorage.setItem('accesstoken',accesstoken)
+  //  }) 
+  //        .catch(err=>{
+  //         console.log(err)
+  //        }) 
   }
   return (
     <>
@@ -35,7 +36,7 @@ function Login() {
  <br></br>           <input type="checkbox"/> I Understand and accept the Terms of use and Privacy Policy 
 
 <br></br>
-<button className='verify_button' onClick={signup}>Verify Otp</button>
+ <NavLink to ="/verify"> <button className='verify_button' onClick={signup}>Verify Otp</button></NavLink> 
 <br></br>
 Already have an account? <span className="already_acc">Login</span>
         </div>
